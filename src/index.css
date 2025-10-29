@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  :root { font-size: 15px; }
+}
+@media (max-width: 420px) {
+  :root { font-size: 14px; }
+}
+
+/* Smooth scrollbar for transaction area */
+::-webkit-scrollbar { height: 8px; width: 8px; }
+::-webkit-scrollbar-thumb { background: rgba(99,102,241,0.35); border-radius: 9999px; }
+
+/* small utility for card shadow consistency */
+.card {
+  @apply bg-white rounded-xl shadow p-6;
+}
